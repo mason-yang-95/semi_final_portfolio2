@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<title>Home</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<style>
+		#menu__toggle {
+	  opacity: 0;
+	}
+	#menu__toggle:checked + .menu__btn > span {
+	  transform: rotate(45deg);
+	}
+	#menu__toggle:checked + .menu__btn > span::before {
+	  top: 0;
+	  transform: rotate(0deg);
+	}
+	#menu__toggle:checked + .menu__btn > span::after {
+	  top: 0;
+	  transform: rotate(90deg);
+	}
+	#menu__toggle:checked ~ .menu__box {
+	  left: 0 !important;
+	}
+	.menu__btn {
+	  position: fixed;
+	  top: 20px;
+	  left: 20px;
+	  width: 26px;
+	  height: 26px;
+	  cursor: pointer;
+	  z-index: 1;
+	}
+	.menu__btn > span,
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+	  display: block;
+	  position: absolute;
+	  width: 100%;
+	  height: 2px;
+	  background-color: #616161;
+	  transition-duration: .25s;
+	}
+	.menu__btn > span::before {
+	  content: '';
+	  top: -8px;
+	}
+	.menu__btn > span::after {
+	  content: '';
+	  top: 8px;
+	}
+	.menu__box {
+	  display: block;
+	  position: fixed;
+	  top: 0;
+	  left: -100%;
+	  width: 300px;
+	  height: 40%;
+	  margin: 0;
+	  padding: 80px 0;
+	  list-style: none;
+	  background-color: #ECEFF1;
+	  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+	  transition-duration: .25s;
+	}
+	.menu__item {
+	  display: block;
+	  padding: 12px 24px;
+	  color: #333;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 20px;
+	  font-weight: 600;
+	  text-decoration: none;
+	  transition-duration: .25s;
+	}
+	.menu__item:hover {
+	  background-color: #CFD8DC;
+	}
+	</style>
+</head>
+<body class="home">
+	<body style="background-color:#dddcdc;">
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			
+			<span class="title">Mason Yang</span>
+			<span class="tagline">Represent Seoul / Toronto<br>
+				<a href="mailto:woneuroyendollar@gmail.com">woneuroyendollar@gmail.com</a></span>
+		</h1>
+	</div>
+
+	<div class="hamburger-menu">
+		<input id="menu__toggle" type="checkbox" />
+		<label class="menu__btn" for="menu__toggle">
+		  <span></span>
+		</label>
+	
+		<ul class="menu__box">
+		  <li><a class="menu__item" href="index.html">Home</a></li>
+		  <li><a class="menu__item" href="about.html">About Me</a></li>
+		  <li><a class="menu__item" href="work.html">Work</a></li>
+		  <li><a class="menu__item" href="contact.html">Contact</a></li>
+		  
+		</ul>
+	  </div>
+</header>
+
+<main id="main">
+
+	<div class="container">
+		
+		
+	
+		<div class="row section recentworks topspace">
+			
+			
+			
+			<div class="thumbnails recentworks row">
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="redesign yelp.html">
+						<span class="img">
+							<img src="assets/images/1.png" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">Redesign YELP</span>
+					</a>
+
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="assets/images/2.png" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">Brand Logo</span>
+					</a>
+
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="brand web design.html">
+						<span class="img">
+							<img src="assets/images/3.png" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">Brand Web Design</span>
+					</a>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="assets/images/4.png" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">Illustration</span>
+					</a>
+
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="3d maya design.html">
+						<span class="img">
+							<img src="assets/images/5.png" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">3D Maya Design</span>
+					</a>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="">
+						<span class="img">
+							<img src="assets/images/6.png" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+						<span class="title">Wearable Device Design</span>
+					</a>
+
+				</div>
+			</div>
+
+		</div> 
+
+
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+1 647 861 0729<br>
+						<a href="mailto:woneuroyendollar@gmail.com">woneuroyendollar@gmail.com</a><br>
+						<br>
+						
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://www.instagram.com/95gatsby"><i class="fa fa-instagram fa-2"></i></a>
+						<a href="https://youtu.be/5MjQ4BTg_DY"><i class="fa fa-youtube fa-2"></i></a>
+						<a href="https://www.facebook.com/mason.yang.5621/"><i class="fa fa-facebook fa-2"></i></a>
+						
+					</p>
+				</div>
+			</div>
+
+
+	</div>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>

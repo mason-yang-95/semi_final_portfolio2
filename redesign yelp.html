@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<title>Redesign Yelp</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<style>
+		#menu__toggle {
+	  opacity: 0;
+	}
+	#menu__toggle:checked + .menu__btn > span {
+	  transform: rotate(45deg);
+	}
+	#menu__toggle:checked + .menu__btn > span::before {
+	  top: 0;
+	  transform: rotate(0deg);
+	}
+	#menu__toggle:checked + .menu__btn > span::after {
+	  top: 0;
+	  transform: rotate(90deg);
+	}
+	#menu__toggle:checked ~ .menu__box {
+	  left: 0 !important;
+	}
+	.menu__btn {
+	  position: fixed;
+	  top: 20px;
+	  left: 20px;
+	  width: 26px;
+	  height: 26px;
+	  cursor: pointer;
+	  z-index: 1;
+	}
+	.menu__btn > span,
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+	  display: block;
+	  position: absolute;
+	  width: 100%;
+	  height: 2px;
+	  background-color: #616161;
+	  transition-duration: .25s;
+	}
+	.menu__btn > span::before {
+	  content: '';
+	  top: -8px;
+	}
+	.menu__btn > span::after {
+	  content: '';
+	  top: 8px;
+	}
+	.menu__box {
+	  display: block;
+	  position: fixed;
+	  top: 0;
+	  left: -100%;
+	  width: 300px;
+	  height: 40%;
+	  margin: 0;
+	  padding: 80px 0;
+	  list-style: none;
+	  background-color: #ECEFF1;
+	  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+	  transition-duration: .25s;
+	}
+	.menu__item {
+	  display: block;
+	  padding: 12px 24px;
+	  color: #333;
+	  font-family: 'Roboto', sans-serif;
+	  font-size: 20px;
+	  font-weight: 600;
+	  text-decoration: none;
+	  transition-duration: .25s;
+	}
+	.menu__item:hover {
+	  background-color: #CFD8DC;
+	}
+	</style>
+
+</head>
+<body class="home">
+	<body style="background-color:#dddcdc;">
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			
+			<span class="title">Mason Yang</span>
+			<span class="tagline">Represent Seoul / Toronto<br>
+				<a href="mailto:woneuroyendollar@gmail.com">woneuroyendollar@gmail.com</a></span>
+		</h1>
+	</div>
+
+	<div class="hamburger-menu">
+		<input id="menu__toggle" type="checkbox" />
+		<label class="menu__btn" for="menu__toggle">
+		  <span></span>
+		</label>
+	
+		<ul class="menu__box">
+			<li><a class="menu__item" href="index.html">Home</a></li>
+			<li><a class="menu__item" href="about.html">About Me</a></li>
+			<li><a class="menu__item" href="work.html">Work</a></li>
+			<li><a class="menu__item" href="contact.html">Contact</a></li>
+			
+		  </ul>
+		</div>
+</header>
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			
+			
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Redesign Yelp</h1>
+				</header>
+
+				<p><img src="assets/images/1.png" alt=""></p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.</p>
+				<h3>Necessitatibus</h3>
+				<p>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam!</p>
+				<blockquote>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam!</blockquote>
+				<p>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam!</p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus!</li>
+					<li>Laboriosam, aliquam totam asperiores nam velit voluptatum non quidem.</li>
+					<li>Voluptatem, libero quia voluptatum ab modi facere dolore assumenda?</li>
+					<li>Expedita, officia tenetur doloremque nulla temporibus ab voluptates adipisci.</li>
+					<li>Nostrum, nesciunt, inventore amet temporibus officia perferendis doloremque nulla.</li>
+					<li>Dolorum, ex earum maiores perspiciatis modi sequi odit mollitia.</li>
+				</ul>
+				
+			</article>
+		
+			<aside class="col-md-4 sidebar sidebar-left">
+
+				<div class="widget">
+					<h4>WHEN / WHERE / WHY</h4>
+					<p>This project is a project that finds the inconvenience of existing applications and redesigns them as a task at George Brown College in 2018. In the YELP app that I actually used a lot, I chose YELP because I felt uncomfortable. I went around the school with the group members and interviewed a total of 13 people, and newly designed wireframes and user flows.</p>
+				</div>
+				<div class="widget">
+					<h4>WHO</h4>
+					<p>Mason Myeoungryeul Yang, Ashely Jesso, Ahmed Mohamed, Avijit Saha</p>
+				</div>
+				
+			</aside>			
+			
+			
+		</div>
+	</div>	
+	
+</main>
+
+
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p>+1 647 861 0729<br>
+						<a href="mailto:woneuroyendollar@gmail.com">woneuroyendollar@gmail.com</a><br>
+						<br>
+						
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href="https://www.instagram.com/95gatsby"><i class="fa fa-instagram fa-2"></i></a>
+						<a href="https://youtu.be/5MjQ4BTg_DY"><i class="fa fa-youtube fa-2"></i></a>
+						<a href="https://www.facebook.com/mason.yang.5621/"><i class="fa fa-facebook fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+
+	</div>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>
